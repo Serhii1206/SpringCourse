@@ -21,7 +21,8 @@
           class="ua.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class=" ua.MusicPlayer">
+          class=" ua.MusicPlayer"
+    scope="singleton">
         <property name="musicList">
             <list>
                 <ref bean="musicBean1"/>
